@@ -3,3 +3,8 @@
 /workspace.xml
 # Editor-based HTTP Client requests
 /httpRequests/
+
+/modules.xml
+/Product-Deno.iml
+/vcs.xml
+/misc.xml
