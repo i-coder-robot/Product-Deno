@@ -16,9 +16,10 @@ export default async ({params, request, response}: { params: any; request: Reque
     }
 
     const d = await request.body()
-    const data = JSON.parse(d.value)
-    const {name, role, isAdmin} = data
-
+    const {name, role, isAdmin} = d.value
+    console.log(name)
+    console.log(role)
+    console.log(isAdmin)
     await updateUser(userId, {name, role, isAdmin})
     response.body = {msg: "更新成功"}
 }
